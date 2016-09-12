@@ -8,4 +8,9 @@ sudo ufw disable
 agentip = $(sudo facter ipaddress_eth1)
 agentfqdn = $(sudo facter fqdn)
 
-sed -i "1s/^/127.0.0.1 $agentfqdn puppetmaster \n$agentip $agentfqdn puppetmaster\n /" /etc/hosts
+sudo sed -i "1s/^/127.0.0.1 $agentfqdn puppetmaster \n$agentip $agentfqdn puppetmaster\n /" /etc/hosts
+
+sudo touch /etc/puppet/manifests/site.pp
+
+sudo puppet cert list
+sudo puppet cert sign –all
