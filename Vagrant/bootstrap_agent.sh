@@ -1,9 +1,9 @@
 #installs
-sudo apt-get install openssh-server openssh-client
-sudo apt-get install facter
-sudo apt-get install vagrant
-sudo apt-get install vim
-sudo apt-get install puppet
+sudo apt-get install -y openssh-server openssh-client
+sudo apt-get install -y facter
+sudo apt-get install -y vagrant
+sudo apt-get install -y vim
+sudo apt-get install -y puppet
 
 #firewall
 sudo ufw disable
