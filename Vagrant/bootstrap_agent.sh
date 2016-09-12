@@ -9,17 +9,11 @@ sudo apt-get install puppet
 sudo ufw disable
 
 #get fqdn and ip
-FqdnId = $(sudo facter fqdn)
-IpId = $(sudo facter ipaddress_eth1)
+agentfqdn = $(sudo facter fqdn)
+agentip = $(sudo facter ipaddress_eth1)
 
 #edit host file
-sudo vi /etc/hosts
-
-192.168.1.25  ammaster.qac.local  puppetmaster
-127.0.0.1 FqdnId  puppet
-IpId  FqdnId  puppet
+sudo sed -i "1s/^/192.168.1.25  ammaster.qac.local  puppetmaster \n127.0.0.1 $agentfqdn puppet \n$agentip $agentfqdn puppet\n /" /etc/hosts
 
 #edit puppet conf
-sudo vi /etc/puppet/puppet.conf
-
-server = ammaster.qac.local
+sudo sed -i "2i server = ammaster.qac.local" /etc/puppet/puppet.conf
