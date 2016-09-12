@@ -1,4 +1,5 @@
 #installs
+sudo apt-get update
 sudo apt-get install -y openssh-server openssh-client
 sudo apt-get install -y facter
 sudo apt-get install -y vagrant
