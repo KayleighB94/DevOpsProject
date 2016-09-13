@@ -24,6 +24,16 @@ sudo touch /etc/puppet/manifests/site.pp
 echo 'devops - site touched'
 
 sudo puppet cert list
+<<<<<<< HEAD
+sudo puppet cert sign –all
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install -y jenkins
+
+sudo apt-get install -y maven
+=======
 echo 'devops - certs listed'
 sudo puppet cert sign --all
 echo 'devops - certs signed'
@@ -36,3 +46,4 @@ echo 'devops - java installed'
 #wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
 #sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 #sudo apt-get install jenkins
+>>>>>>> 7d497aa6e05d025aa9a3457adfeac7c00fbb02c4

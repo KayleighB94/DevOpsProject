@@ -1,6 +1,6 @@
 sudo apt-get install -y git
 sudo puppet module install -y puppetlabs/vcsrepo
-mkdir gitrepo
+
 
 class git::clone($repo, $username = 'KayleighB94'){
 	$group = $username
@@ -43,7 +43,7 @@ class git::clone($repo, $username = 'KayleighB94'){
         group    => $owner,
         provider => git,
         require  => [ Package["git"] ],
-        source   => "http://giturl.com/proj/${repo}.git",
+        source   => "http://github.com/KayleighB94/DevOpsProject.git",
         revision => 'master',
     }
 }
