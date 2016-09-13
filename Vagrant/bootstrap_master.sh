@@ -4,6 +4,8 @@ sudo locale-gen en_US.UTF-8
 sudo apt-get update
 #install server
 sudo apt-get install -y openssh-server openssh-client
+#install vim
+sudo apt-get install -y vim
 
 #disable firewall
 sudo ufw disable
@@ -31,24 +33,34 @@ echo 'devops - site touched'
 sudo sed -i "\$aautosign = true" /etc/puppet/puppet.conf
 echo 'devops - autosign enabled'
 
-##certificare authentication
-#sudo puppet cert list
-#echo 'devops - certs listed'
-#sudo puppet cert sign --all
-#echo 'devops - certs signed'
-
-#java non puppet install
-echo 'start java install'
-sudo apt-get install -y default-jre
-sudo apt-get install -y default-jdk
+#java puppet install
+puppet module install puppetlabs-java
 echo 'devops - java installed'
-
-#jenkins non puppet install
-wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-sudo apt-get install -y jenkins
+#jenkins puppet install
+puppet module install rtyler-jenkins
 echo 'devops - jenkins installed'
-
-#maven non puppet install
-sudo apt-get install -y maven
+#maven puppet install
+puppet module install maestrodev-maven
 echo 'devops - maven installed'
+#git puppet install
+puppet module install puppetlabs-git
+echo 'devops - git installed'
+#jira puppet install
+puppet module install puppet-jira
+echo 'devops - jira installed'
+
+##java non puppet install
+#echo 'start java install'
+#sudo apt-get install -y default-jre
+#sudo apt-get install -y default-jdk
+#echo 'devops - java installed'
+
+##jenkins non puppet install
+#wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+#sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+#sudo apt-get install -y jenkins
+#echo 'devops - jenkins installed'
+
+##maven non puppet install
+#sudo apt-get install -y maven
+#echo 'devops - maven installed'
