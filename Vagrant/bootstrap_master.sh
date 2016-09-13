@@ -27,7 +27,11 @@ echo 'devops - hosts edited'
 sudo touch /etc/puppet/manifests/site.pp
 echo 'devops - site touched'
 
-##certificare authentication 
+#autosign
+sudo sed -i "\$aautosign = true" /etc/puppet/puppet.conf
+echo 'devops - autosign enabled'
+
+##certificare authentication
 #sudo puppet cert list
 #echo 'devops - certs listed'
 #sudo puppet cert sign --all
