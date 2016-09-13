@@ -17,7 +17,7 @@ agentip=$(sudo facter ipaddress_eth1)
 echo  'devops - variables set ' $agentfqdn
 echo  'devops - variables set ' $agentip
 
-sudo sed -i "1s/^/127.0.0.1 $agentfqdn puppetmaster \n$agentip $agentfqdn puppetmaster\n /" /etc/hosts
+sudo sed -i "1s/^/127.0.0.1 $agentfqdn puppetmaster \n$agentip $agentfqdn puppetmaster\n\n/" /etc/hosts
 echo 'devops - hosts edited'
 
 sudo touch /etc/puppet/manifests/site.pp
