@@ -29,8 +29,3 @@ sudo service puppet stop
 sudo service puppet start
 sudo puppet agent --enable
 echo 'devops - puppet restarted'
-
-##java instilation
-#sudo apt-get install -y default-jre
-#sudo apt-get install -y default-jdk
-#echo 'devops - java installed'

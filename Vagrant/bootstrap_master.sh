@@ -48,19 +48,3 @@ echo 'devops - git installed'
 #jira puppet install
 puppet module install puppet-jira
 echo 'devops - jira installed'
-
-##java non puppet install
-#echo 'start java install'
-#sudo apt-get install -y default-jre
-#sudo apt-get install -y default-jdk
-#echo 'devops - java installed'
-
-##jenkins non puppet install
-#wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
-#sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-#sudo apt-get install -y jenkins
-#echo 'devops - jenkins installed'
-
-##maven non puppet install
-#sudo apt-get install -y maven
-#echo 'devops - maven installed'
