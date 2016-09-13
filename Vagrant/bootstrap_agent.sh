@@ -18,3 +18,7 @@ sudo sed -i "1s/^/192.168.1.25  ammaster.qac.local  puppetmaster \n127.0.0.1 $ag
 
 #edit puppet conf
 sudo sed -i "2i server = ammaster.qac.local" /etc/puppet/puppet.conf
+
+sudo apt-get update
+sudo apt-get install default-jre
+sudo apt-get install default-jdk
