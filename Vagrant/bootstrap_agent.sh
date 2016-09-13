@@ -5,16 +5,21 @@ sudo apt-get install -y facter
 sudo apt-get install -y vagrant
 sudo apt-get install -y vim
 sudo apt-get install -y puppet
+echo 'Installs completed '
 
 #firewall
 sudo ufw disable
+echo 'Firewall disabled '
 
 #get fqdn and ip
 agentfqdn = $(sudo facter fqdn)
 agentip = $(sudo facter ipaddress_eth1)
+echo 'Variables set'
 
 #edit host file
 sudo sed -i "1s/^/192.168.1.25  ammaster.qac.local  puppetmaster \n127.0.0.1 $agentfqdn puppet \n$agentip $agentfqdn puppet\n /" /etc/hosts
+echo 'Hostfile edited'
 
 #edit puppet conf
 sudo sed -i "2i server = ammaster.qac.local" /etc/puppet/puppet.conf
+echo 'Puppet.conf edited'
