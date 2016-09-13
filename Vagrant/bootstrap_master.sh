@@ -25,11 +25,10 @@ echo 'devops - site touched'
 
 sudo puppet cert list
 echo 'devops - certs listed'
-sudo puppet cert sign -all
+sudo puppet cert sign --all
 echo 'devops - certs signed'
 
-
-sudo apt-get update
+echo 'start java install'
 sudo apt-get install -y default-jre
 sudo apt-get install -y default-jdk
 echo 'devops - java installed'
