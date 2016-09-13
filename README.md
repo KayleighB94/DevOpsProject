@@ -11,7 +11,8 @@ In order to complete the following steps you will need to have gitbash installed
 
 **Steps to run the virtualised project**
 
-- Open gitbash and from the command line type 
+- Open gitbash and from the command line type
+ 
 cd Documents
 git clone https://github.com/KayleighB94/DevOpsProject.git
 cd Vagrant
