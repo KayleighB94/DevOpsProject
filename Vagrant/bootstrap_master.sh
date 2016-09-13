@@ -30,8 +30,8 @@ echo 'devops - certs signed'
 
 
 sudo apt-get update
-sudo apt-get install default-jre
-sudo apt-get install default-jdk
+sudo apt-get install -y default-jre
+sudo apt-get install -y default-jdk
 echo 'devops - java installed'
 
 #wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
