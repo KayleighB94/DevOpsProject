@@ -25,4 +25,4 @@ cd Vagrant
 Vagrant up
 
 - This will setup the virtual machines
-- 
+
