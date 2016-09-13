@@ -12,8 +12,8 @@ sudo ufw disable
 echo 'devops - Firewall disabled '
 
 #get fqdn and ip
-agentfqdn = $(sudo facter fqdn)
-agentip = $(sudo facter ipaddress_eth1)
+agentfqdn=$(sudo facter fqdn)
+agentip=$(sudo facter ipaddress_eth1)
 echo 'devops - Variables set'
 
 #edit host file
