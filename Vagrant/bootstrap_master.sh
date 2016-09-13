@@ -32,8 +32,10 @@ sudo apt-get install -y default-jre
 sudo apt-get install -y default-jdk
 echo 'devops - java installed'
 
-#wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
-#sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-#sudo apt-get install -y jenkins
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get install -y jenkins
+echo 'devops - jenkins installed'
 
-#sudo apt-get install -y maven
+sudo apt-get install -y maven
+echo 'devops - maven installed'
