@@ -1,3 +1,5 @@
+sudo locale-gen en_US.UTF-8
+
 sudo apt-get update
 
 sudo apt-get install -y openssh-server openssh-client
