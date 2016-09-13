@@ -22,14 +22,10 @@ echo 'devops - Hostfile edited'
 
 #edit puppet conf
 sudo sed -i "2i server = ammaster.qac.local" /etc/puppet/puppet.conf
+echo 'devops - Puppet.conf edited'
 
 
 
 sudo apt-get update
 sudo apt-get install default-jre
 sudo apt-get install default-jdk
-=======
-echo 'Puppet.conf edited'
-=======
-echo 'devops - Puppet.conf edited'
-
