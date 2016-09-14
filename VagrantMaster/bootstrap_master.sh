@@ -1,5 +1,5 @@
 #set language
-sudo locale-gen en_US.UTF-8
+sudo locale-gen en_UK.UTF-8
 #update
 sudo apt-get update
 #install server
