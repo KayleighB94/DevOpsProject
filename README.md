@@ -125,6 +125,12 @@ The bootstrap agent installs puppet automatically thus there is no needed to use
 </p> <br />
 This pulls everything that needs to be provisioned - python, jenkins server, maven etc will be installed using this command.
 
+### Testing 
+- Test Jenkins Server:  Go to a Firefox Browser in the virtual machine and run the following in the url bar
+<p align="center">
+    _`<IP ADDRESS>` + :8080_
+</p> <br />
+
 
 
 <!--**Steps to run the virtualised project**-->
