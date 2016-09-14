@@ -109,6 +109,7 @@ You can discover a free IP using the 'ping' command followed by the IP desired i
 
 **3. Run Vagrant**
 Now we run vagrant using the following
+
 <p align="center">
     _vagrant up_
 </p> <br />
@@ -120,7 +121,7 @@ The bootstrap agent installs puppet automatically thus there is no needed to use
 ## Setting up Master and Agent on Ubuntu
 **1. Connect Agent to Master**
 <p align="center">
-    _sudo agent --test --server=ammaster3.qac.local_
+    _sudo puppet agent --test --server=ammaster3.qac.local_
 </p> <br />
 This pulls everything that needs to be provisioned - python, jenkins server, maven etc will be installed using this command.
 
