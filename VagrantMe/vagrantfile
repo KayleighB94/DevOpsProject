@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 		agent.vm.provision :shell, path: "bootstrap_agent.sh"
 		agent.vm.provider :virtualbox do |agentVM|
 			agentVM.gui = true
-			agentVM.name = "TomR"
+			agentVM.name = "AgentAmeen"
 			agentVM.memory = 4096
 			agentVM.cpus = 2
 		end
