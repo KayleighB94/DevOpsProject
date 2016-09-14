@@ -5,6 +5,7 @@ sudo apt-get install -y facter
 sudo apt-get install -y vagrant
 sudo apt-get install -y vim
 sudo apt-get install -y puppet
+sudo apt-get install -y icedtea-netx
 echo 'devops - Installs completed '
 
 #firewall
@@ -28,4 +29,8 @@ echo 'devops - Puppet.conf edited'
 sudo service puppet stop
 sudo service puppet start
 sudo puppet agent --enable
-echo 'devops - puppet restarted'
+echo 'devops - Puppet restarted'
+
+#test master connection
+sudo puppet agent --test --server=ammaster3.qac.local
+echo 'devops - Puppet master connection tested'
