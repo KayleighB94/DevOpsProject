@@ -1,0 +1,1 @@
+{"virtualbox":{"/tmp/shared":{"guestpath":"/tmp/shared","hostpath":"C:/Users/Administrator/Documents/chibs/DevOpsProject/VagrantChibz/shared","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Administrator/Documents/chibs/DevOpsProject/VagrantChibz","disabled":false,"__vagrantfile":true}}}
