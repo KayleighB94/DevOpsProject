@@ -50,4 +50,5 @@ puppet module install mkrakowitzer-jira
 echo 'devops - jira installed'
 
 #catalog
-#sudo bash -c 'echo "node amagent13.qac.local {include java include jenkins include maven include git } class { 'jira':  javahome    => '/opt/java',} " > /etc/puppet/manifests/site.pp'
+sudo bash -c 'echo "node amagent13.qac.local {" > /etc/puppet/manifests/site.pp'
+sudo sed -i "\$a\ \tinclude java \n\tinclude jenkins \n\tinclude maven \n\tinclude git \n\tclass { 'jira':  javahome    => '/opt/java',}\n}" /etc/puppet/manifests/site.pp
