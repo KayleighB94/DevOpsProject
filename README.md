@@ -81,24 +81,63 @@ A repository link can be found by following the image example below;
 
 ## Setting up Vagrant
 ### Purpose
-In essence the Git tool will be used for the management of versions of the source code. 
+To automate machine provisioning and installation of applications. 
 
 ### Installation instructions
+**0. Prerequisite**
+  - Git is installed
+  - Github repository has successfully been cloned
+
+**1. Creating a Vagrant Folder**
+Copy the exisitng Vagrant folder and rename it 'vagrant<your name>' and save it in the same directory. 
+<p align="center">
+    _cp -R + `<EXISTING FOLDER>` + `<NEW FOLDER NAME>`_
+</p> <br />
+This can also be achieved manually.
+
+**2. Creating a Vagrant Folder**
+We can now manually open the vagrant file located in your new vagrant directory and edit the Ip address
+<p align="center">
+    _192.168.1. + `<a free IP>`_
+</p> <br />
+
+You can discover a free IP using the 'ping' command followed by the IP desired in the command prompt. You must then change the hostname to a unique name.
+
+<p align="center">
+    _agent + `<yourname or some name>` + .qac.local_
+</p> <br />
+
+**3. Run Vagrant**
+Now we run vagrant using the following
+<p align="center">
+    _vagrant up_
+</p> <br />
+
+### Puppet
+The bootstrap agent installs puppet automatically thus there is no needed to use seperate command to install puppet
+
+
+## Setting up Master and Agent on Ubuntu
+**1. Connect Agent to Master**
+<p align="center">
+    _sudo agent --test --server=ammaster3.qac.local_
+</p> <br />
+This pulls everything that needs to be provisioned - python, jenkins server, maven etc will be installed using this command.
 
 
 
-**Steps to run the virtualised project**
+<!--**Steps to run the virtualised project**-->
 
 
-- Open gitbash and from the command line type
+<!--- Open gitbash and from the command line type-->
  
-cd Documents
+<!--cd Documents-->
 
-git clone https://github.com/KayleighB94/DevOpsProject.git
+<!--git clone https://github.com/KayleighB94/DevOpsProject.git-->
 
-cd Vagrant
+<!--cd Vagrant-->
 
-Vagrant up
+<!--Vagrant up-->
 
-- This will setup the virtual machines
+<!--- This will setup the virtual machines-->
 
