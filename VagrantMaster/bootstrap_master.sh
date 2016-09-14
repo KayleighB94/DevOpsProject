@@ -51,5 +51,5 @@ echo 'devops - jira installed'
 
 #catalog
 sudo bash -c 'echo > /etc/puppet/manifests/site.pp'
-sudo sed -i "\$a\node 'amagent13.qac.local' { \n\tinclude java \n\tinclude jenkins \n\tinclude maven \n\tinclude git \n\tclass { 'jira':\n\t\tjavahome    => '/opt/java',\n\t}\n}" /etc/puppet/manifests/site.pp
+sudo sed -i "\$a\node 'agentkayleighb.qac.local', 'agentgemma.qac.local', 'agentameen.qac.local', 'agentchibz.qac.local', 'agenttomr.qac.local' { \n\tinclude java \n\tinclude jenkins \n\tinclude maven \n\tinclude git \n\tclass { 'jira':\n\t\tjavahome    => '/opt/java',\n\t}\n}" /etc/puppet/manifests/site.pp
 echo 'devops - code added to catalog'
