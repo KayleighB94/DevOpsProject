@@ -53,3 +53,10 @@ echo 'devops - jira installed'
 sudo bash -c 'echo > /etc/puppet/manifests/site.pp'
 sudo sed -i "\$a\node 'agentkayleighb.qac.local', 'agentgemma.qac.local', 'agentameen.qac.local', 'agentchibz.qac.local', 'agenttomr.qac.local' { \n\tinclude java \n\tinclude jenkins \n\tinclude maven \n\tinclude git \n\tclass { 'jira':\n\t\tjavahome    => '/opt/java',\n\t\ttomcatpPort => '8081'\n\t}\n}" /etc/puppet/manifests/site.pp
 echo 'devops - code added to catalog'
+
+#install jenkins on master
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install -y jenkins
+echo 'devops - jenkins installed on master'
