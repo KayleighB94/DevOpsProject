@@ -3,6 +3,7 @@
 **Team Members**
 - Edward Stevens
 - Thomas Reilly
+- Ameen Haq
 - Kayleigh Bellis
 - Gemma Irving
 - Chibuzo Nwobiri
