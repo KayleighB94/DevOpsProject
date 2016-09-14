@@ -41,7 +41,7 @@ You will need to specify unique details custom to you the user as a substitute o
 
 **2. Setting up the directory** 
 
-To create a bidirectional link between the chosen local directory and the Github repository. You ccan use either of the following options;
+To create a bidirectional link between the chosen local directory and the Github repository. You can use either of the following options;
 
  - Navigating to an exisitng directory
 <p align="center">
@@ -67,7 +67,7 @@ To create a bidirectional link between the chosen local directory and the Github
 **4. Clone directory**
   - In the current directory
 <p align="center">
-    _GIT CLONE + `<REPOSITORY LINK>` _
+    _GIT CLONE + `<REPOSITORY LINK>`_
 </p> <br />
 
   - Similarly, we can mirror the repository locally without navigating manually through the following.
@@ -75,6 +75,9 @@ To create a bidirectional link between the chosen local directory and the Github
     _GIT CLONE + `<REPOSITORY LINK>` + `<DIRECTORY PATH>`_
 </p> <br />
 
+A repository link can be found by following the image example below;
+<!--<div style="text-align:center"><img src="https://raw.githubusercontent.com/ameenhaq/VernacularPlaceNameFinder-Project/master/img/3.png" width="600" height="400" /></div>-->
+<div><img  src="https://raw.githubusercontent.com/ameenhaq/VernacularPlaceNameFinder-Project/master/img/3.png" width="600" height="400" /></div>
 
 ## Setting up Vagrant
 ### Purpose
