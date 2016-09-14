@@ -77,7 +77,7 @@ To create a bidirectional link between the chosen local directory and the Github
 
 A repository link can be found by following the image example below;
 <!--<div style="text-align:center"><img src="https://raw.githubusercontent.com/ameenhaq/VernacularPlaceNameFinder-Project/master/img/3.png" width="600" height="400" /></div>-->
-<div><img  src="https://raw.githubusercontent.com/ameenhaq/VernacularPlaceNameFinder-Project/master/img/3.png" width="600" height="400" /></div>
+<div><img  src="https://raw.githubusercontent.com/KayleighB94/DevOpsProject/master/img/1.png"  /></div>
 
 ## Setting up Vagrant
 ### Purpose
