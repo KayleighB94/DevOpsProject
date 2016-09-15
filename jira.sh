@@ -7,3 +7,4 @@ chmod a+x atlassian-jira-software-7.2.1-x64.bin
 #run the file
 sudo ./atlassian-jira-software-7.2.1-x64.bin
 #choose express install
+#test
