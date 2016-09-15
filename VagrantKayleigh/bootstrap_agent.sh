@@ -1,3 +1,4 @@
+
 #installs
 sudo apt-get update
 sudo apt-get install -y openssh-server openssh-client
@@ -14,6 +15,9 @@ setxkbmap -layout gb
 #firewall
 sudo ufw disable
 echo 'devops - Firewall disabled '
+
+#uk keyboard
+setxkbmap -layout gb
 
 #get fqdn and ip
 agentfqdn=$(sudo facter fqdn)
