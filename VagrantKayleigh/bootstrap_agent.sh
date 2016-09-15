@@ -13,6 +13,9 @@ echo 'devops - Installs completed '
 sudo ufw disable
 echo 'devops - Firewall disabled '
 
+#uk keyboard
+setxkbmap -layout gb
+
 #get fqdn and ip
 agentfqdn=$(sudo facter fqdn)
 agentip=$(sudo facter ipaddress_eth1)
