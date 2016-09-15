@@ -7,6 +7,9 @@ sudo apt-get install -y openssh-server openssh-client
 #install vim
 sudo apt-get install -y vim
 
+#uk keyboard
+setxkbmap -layout gb
+
 #disable firewall
 sudo ufw disable
 echo 'devops - ufw disabled'
@@ -60,3 +63,5 @@ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sour
 sudo apt-get update
 sudo apt-get install -y jenkins
 echo 'devops - jenkins installed on master'
+
+#install jira on master
