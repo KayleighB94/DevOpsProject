@@ -5,7 +5,11 @@ sudo apt-get install -y facter
 sudo apt-get install -y vagrant
 sudo apt-get install -y vim
 sudo apt-get install -y puppet
+sudo apt-get install -y icedtea-netx
 echo 'devops - Installs completed '
+
+#uk keyboard
+setxkbmap -layout gb
 
 #firewall
 sudo ufw disable
