@@ -1,3 +1,4 @@
+
 #installs
 sudo apt-get update
 sudo apt-get install -y openssh-server openssh-client
@@ -28,4 +29,8 @@ echo 'devops - Puppet.conf edited'
 sudo service puppet stop
 sudo service puppet start
 sudo puppet agent --enable
-echo 'devops - puppet restarted'
+echo 'devops - Puppet restarted'
+
+#test master connection
+sudo puppet agent --test --server=ammaster3.qac.local
+echo 'devops - Puppet master connection tested'
