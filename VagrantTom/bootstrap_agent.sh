@@ -8,6 +8,9 @@ sudo apt-get install -y puppet
 sudo apt-get install -y icedtea-netx
 echo 'devops - Installs completed '
 
+#uk keyboard
+setxkbmap -layout gb
+
 #firewall
 sudo ufw disable
 echo 'devops - Firewall disabled '
