@@ -119,16 +119,6 @@ The bootstrap agent installs puppet automatically thus there is no needed to use
 
 
 ## Setting up Master and Agent on Ubuntu
-**1. Connect Agent to Master**
-<p align="center">
-    _sudo puppet agent --test --server=ammaster3.qac.local_
-</p> <br />
-This pulls everything that needs to be provisioned in a single command. No additional step should be required. Installed packages;
-- Java
-- Jira
-- Git
-- Maven
-- Jenkins Server setup
 
 ### Testing 
 - **Test Jenkins Server**:  Go to a Firefox Browser in the virtual machine and run the following in the url bar
