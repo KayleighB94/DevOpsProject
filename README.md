@@ -207,3 +207,14 @@ The bootstrap agent installs puppet automatically thus there is no needed to use
 
 <!--- This will setup the virtual machines-->
 
+###Connecting Git, Cloud Foundry
+
+In order to connect git, cloud foundry and Jenkins together, you need to install the plugins.
+- **Connecting to Jenkins**:Type in Firefox web browser
+<p align="center">
+    hhtp://192.168.1.25:8080
+</p> <br />
+- Click on Manage Jenkins
+- Click on Manage Jenkins Plugins
+- Go on the aviavable tag, and search for github plugin and Cloud foundry plugin
+- Select both of these plugins and install them
