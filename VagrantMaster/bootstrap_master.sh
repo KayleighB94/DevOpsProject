@@ -6,6 +6,8 @@ sudo apt-get update
 sudo apt-get install -y openssh-server openssh-client
 #install vim
 sudo apt-get install -y vim
+#install git
+sudo apt-get install -y git
 
 #uk keyboard
 setxkbmap -layout gb
