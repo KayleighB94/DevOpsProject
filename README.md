@@ -141,6 +141,52 @@ The bootstrap agent installs puppet automatically thus there is no needed to use
     _git --version_
 </p> <br />
 
+###Setting up Jira
+
+- **Install Jira**: In terminal enter
+<p align="center">
+    sudo ./atlassian-jira-software-7.2.1-x64.bin
+</p> <br />
+
+- **Confirm instilation**: In terminal enter
+<p align="center">
+    o
+</p> <br />
+
+- **Choose Custom install**: In terminal enter
+<p align="center">
+    2
+</p> <br />
+
+- **Where should jira software be installed?**: Leave blank and hit enter
+
+- **Deafault location for software data**: Leave blank and hit enter
+
+- **Choose Custom ports**: In terminal enter
+<p align="center">
+    2
+</p> <br />
+ 
+- **Http Port number**: In terminal enter
+<p align="center">
+    8081
+</p> <br />
+
+- **Control port number**: In terminal enter
+<p align="center">
+    8006
+</p> <br />
+
+- **Jira runs as a service?**: In terminal enter
+<p align="center">
+    y
+</p> <br />
+
+- **Confirm full install**: In terminal enter
+<p align="center">
+    i
+</p> <br />
+
 <!--- **Test Jira**: In terminal we can verify its installation through using the version command-->
 <!--<p align="center">-->
 <!--    _mvn -version_-->
