@@ -67,11 +67,5 @@ sudo apt-get install -y jenkins
 echo 'devops - jenkins installed on master'
 
 #install jira on master
-cd /bin/
 sudo wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.2.1-x64.bin
 chmod a+x atlassian-jira-software-7.2.1-x64.bin
-sudo ./atlassian-jira-software-7.2.1-x64.bin
-
-#installs cloud foundry on master
-sudo wget https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.21.1&source=github-rel
-sudo dpkg -i path/to/cf-cli-*.deb && apt-get install -f
